@@ -4,7 +4,11 @@
       "Bash(cat:*)",
       "Bash(npx vitest:*)",
       "mcp__playwright",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "Bash(git checkout:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "mcp__github__create_pull_request"
     ]
   }
 }
