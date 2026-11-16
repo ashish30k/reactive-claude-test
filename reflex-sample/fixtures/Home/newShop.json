@@ -1,0 +1,18 @@
+{
+  "description": "A brand-new store: no orders yet, nothing to do.",
+  "operations": {
+    "ShopOverview": [
+      {
+        "data": {
+          "shop": { "name": "Fresh Start Co.", "currencyCode": "CAD" },
+          "todayOrders": { "nodes": [] },
+          "unfulfilled": { "count": 0 },
+          "lowStock": { "count": 0 }
+        }
+      }
+    ],
+    "OrdersList": [
+      { "data": { "orders": { "nodes": [], "pageInfo": { "hasNextPage": false, "endCursor": null } } } }
+    ]
+  }
+}

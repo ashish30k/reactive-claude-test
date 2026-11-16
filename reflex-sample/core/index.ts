@@ -1,0 +1,21 @@
+// Public surface of the headless core. Hosts (web, CLI, tests) import from here.
+export { AppRoot, parseDeepLink, type AppState } from "./app/AppRoot";
+export type { Tab, Route } from "./app/context";
+export { TABS } from "./app/context";
+export { ViewModel, type ReflexNode, type ActionDescriptor, type AnyViewModel } from "./foundation/reflex";
+export type { Platform, GraphQLTransport, GraphQLRequest, Clock, Logger } from "./foundation/platform";
+export { NetworkError, GraphQLError, systemClock, consoleLogger } from "./foundation/platform";
+export { Documents, type OperationName } from "./services/admin-api";
+export type { HomeState } from "./features/home/HomeViewModel";
+export type { OrdersListState } from "./features/orders/OrdersListViewModel";
+export type { OrderDetailState } from "./features/orders/OrderDetailViewModel";
+export { CARRIERS } from "./features/orders/OrderDetailViewModel";
+export type { ProductsListState } from "./features/products/ProductsListViewModel";
+export type { ProductDetailState } from "./features/products/ProductDetailViewModel";
+export { PRODUCT_STATUSES } from "./features/products/ProductDetailViewModel";
+export { ORDER_FILTERS, PRODUCT_FILTERS } from "./app/context";
+export { HomeViewModel } from "./features/home/HomeViewModel";
+export { OrdersListViewModel } from "./features/orders/OrdersListViewModel";
+export { OrderDetailViewModel } from "./features/orders/OrderDetailViewModel";
+export { ProductsListViewModel } from "./features/products/ProductsListViewModel";
+export { ProductDetailViewModel } from "./features/products/ProductDetailViewModel";

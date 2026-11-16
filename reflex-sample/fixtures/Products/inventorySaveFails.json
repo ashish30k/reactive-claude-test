@@ -1,0 +1,6 @@
+{
+  "description": "Inventory saves fail (connection drops mid-request).",
+  "operations": {
+    "AdjustInventory": [{ "networkError": "The network connection was lost." }]
+  }
+}

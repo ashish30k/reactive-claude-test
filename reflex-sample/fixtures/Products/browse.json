@@ -1,0 +1,368 @@
+{
+  "description": "Products tab: both pages, low-stock filter, and a product detail.",
+  "operations": {
+    "ShopOverview": [
+      {
+        "variables": {
+          "todayQuery": "created_at:>='2026-11-16T05:00:00.000Z'"
+        },
+        "data": {
+          "shop": {
+            "name": "Maple & Pine Goods",
+            "currencyCode": "USD"
+          },
+          "todayOrders": {
+            "nodes": [
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                }
+              }
+            ]
+          },
+          "unfulfilled": {
+            "count": 9
+          },
+          "lowStock": {
+            "count": 4
+          }
+        }
+      }
+    ],
+    "ProductsList": [
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": null
+        },
+        "data": {
+          "products": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Product/8020",
+                "title": "Bamboo Bath Mat",
+                "status": "ACTIVE",
+                "vendor": "Maple & Pine",
+                "totalInventory": 4,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8007",
+                "title": "Beeswax Food Wraps (3-pack)",
+                "status": "ACTIVE",
+                "vendor": "Hive & Co.",
+                "totalInventory": 75,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8010",
+                "title": "Brass Candle Holder",
+                "status": "ACTIVE",
+                "vendor": "Ember Co.",
+                "totalInventory": 0,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8006",
+                "title": "Ceramic Planter",
+                "status": "ACTIVE",
+                "vendor": "Clayfolk",
+                "totalInventory": 30,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8009",
+                "title": "Cotton Rope Basket",
+                "status": "ACTIVE",
+                "vendor": "Maple & Pine",
+                "totalInventory": 31,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8018",
+                "title": "Enamel Watering Can",
+                "status": "ACTIVE",
+                "vendor": "Grain Studio",
+                "totalInventory": 6,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8008",
+                "title": "Glass Carafe",
+                "status": "ACTIVE",
+                "vendor": "Clearwater",
+                "totalInventory": 2,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8001",
+                "title": "Hand-Poured Soy Candle",
+                "status": "ACTIVE",
+                "vendor": "Ember Co.",
+                "totalInventory": 44,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8013",
+                "title": "Holiday Gift Box",
+                "status": "DRAFT",
+                "vendor": "Maple & Pine",
+                "totalInventory": 40,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8019",
+                "title": "Juniper Hand Soap",
+                "status": "ACTIVE",
+                "vendor": "Hive & Co.",
+                "totalInventory": 88,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8000",
+                "title": "Linen Throw Pillow",
+                "status": "ACTIVE",
+                "vendor": "Maple & Pine",
+                "totalInventory": 17,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8015",
+                "title": "Marble Coaster Set",
+                "status": "ACTIVE",
+                "vendor": "Grain Studio",
+                "totalInventory": 26,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8012",
+                "title": "Organic Cotton Apron",
+                "status": "ACTIVE",
+                "vendor": "Northloom",
+                "totalInventory": 29,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8014",
+                "title": "Pine Needle Incense",
+                "status": "ACTIVE",
+                "vendor": "Ember Co.",
+                "totalInventory": 3,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8011",
+                "title": "Recycled Glass Vase",
+                "status": "ACTIVE",
+                "vendor": "Clearwater",
+                "totalInventory": 16,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8002",
+                "title": "Stoneware Mug",
+                "status": "ACTIVE",
+                "vendor": "Clayfolk",
+                "totalInventory": 85,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8017",
+                "title": "Summer Citronella Candle",
+                "status": "ARCHIVED",
+                "vendor": "Ember Co.",
+                "totalInventory": 0,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8021",
+                "title": "Terracotta Oil Diffuser",
+                "status": "ACTIVE",
+                "vendor": "Clayfolk",
+                "totalInventory": 19,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8003",
+                "title": "Waffle Bath Towel",
+                "status": "ACTIVE",
+                "vendor": "Maple & Pine",
+                "totalInventory": 31,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8004",
+                "title": "Walnut Serving Board",
+                "status": "ACTIVE",
+                "vendor": "Grain Studio",
+                "totalInventory": 5,
+                "featuredMedia": null
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "MjA="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": "MjA=",
+          "query": null
+        },
+        "data": {
+          "products": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Product/8005",
+                "title": "Wool Blend Blanket",
+                "status": "ACTIVE",
+                "vendor": "Northloom",
+                "totalInventory": 9,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8016",
+                "title": "Woven Placemats (set of 4)",
+                "status": "ACTIVE",
+                "vendor": "Northloom",
+                "totalInventory": 13,
+                "featuredMedia": null
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "MjI="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": "status:active inventory_total:<5"
+        },
+        "data": {
+          "products": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Product/8020",
+                "title": "Bamboo Bath Mat",
+                "status": "ACTIVE",
+                "vendor": "Maple & Pine",
+                "totalInventory": 4,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8010",
+                "title": "Brass Candle Holder",
+                "status": "ACTIVE",
+                "vendor": "Ember Co.",
+                "totalInventory": 0,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8008",
+                "title": "Glass Carafe",
+                "status": "ACTIVE",
+                "vendor": "Clearwater",
+                "totalInventory": 2,
+                "featuredMedia": null
+              },
+              {
+                "id": "gid://shopify/Product/8014",
+                "title": "Pine Needle Incense",
+                "status": "ACTIVE",
+                "vendor": "Ember Co.",
+                "totalInventory": 3,
+                "featuredMedia": null
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "NA=="
+            }
+          }
+        }
+      }
+    ],
+    "ProductDetail": [
+      {
+        "variables": {
+          "id": "gid://shopify/Product/8008"
+        },
+        "data": {
+          "product": {
+            "id": "gid://shopify/Product/8008",
+            "title": "Glass Carafe",
+            "status": "ACTIVE",
+            "vendor": "Clearwater",
+            "totalInventory": 2,
+            "featuredMedia": null,
+            "productType": "Kitchen",
+            "variants": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/ProductVariant/40015",
+                  "title": "1 L",
+                  "sku": "GLAS-1L",
+                  "price": "32.00",
+                  "inventoryQuantity": 2,
+                  "inventoryItem": {
+                    "id": "gid://shopify/InventoryItem/50015"
+                  }
+                }
+              ]
+            }
+          },
+          "location": {
+            "id": "gid://shopify/Location/1",
+            "name": "Main Warehouse"
+          },
+          "shop": {
+            "currencyCode": "USD"
+          }
+        }
+      }
+    ]
+  }
+}

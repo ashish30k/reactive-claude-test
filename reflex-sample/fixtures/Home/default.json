@@ -1,0 +1,68 @@
+{
+  "description": "Dashboard on launch.",
+  "operations": {
+    "ShopOverview": [
+      {
+        "variables": {
+          "todayQuery": "created_at:>='2026-11-16T05:00:00.000Z'"
+        },
+        "data": {
+          "shop": {
+            "name": "Maple & Pine Goods",
+            "currencyCode": "USD"
+          },
+          "todayOrders": {
+            "nodes": [
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                }
+              }
+            ]
+          },
+          "unfulfilled": {
+            "count": 9
+          },
+          "lowStock": {
+            "count": 4
+          }
+        }
+      }
+    ]
+  }
+}

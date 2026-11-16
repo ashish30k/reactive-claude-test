@@ -1,0 +1,1687 @@
+{
+  "description": "Orders tab: all pages, each filter, a search, and the three newest order details.",
+  "operations": {
+    "ShopOverview": [
+      {
+        "variables": {
+          "todayQuery": "created_at:>='2026-11-16T05:00:00.000Z'"
+        },
+        "data": {
+          "shop": {
+            "name": "Maple & Pine Goods",
+            "currencyCode": "USD"
+          },
+          "todayOrders": {
+            "nodes": [
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                }
+              }
+            ]
+          },
+          "unfulfilled": {
+            "count": 9
+          },
+          "lowStock": {
+            "count": 4
+          }
+        }
+      }
+    ],
+    "OrdersList": [
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": null
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1046",
+                "name": "#1046",
+                "createdAt": "2026-11-16T20:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1045",
+                "name": "#1045",
+                "createdAt": "2026-11-16T18:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1044",
+                "name": "#1044",
+                "createdAt": "2026-11-16T17:15:00.000Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1043",
+                "name": "#1043",
+                "createdAt": "2026-11-16T15:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1042",
+                "name": "#1042",
+                "createdAt": "2026-11-16T14:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1041",
+                "name": "#1041",
+                "createdAt": "2026-11-14T00:15:15.684Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "417.18",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1040",
+                "name": "#1040",
+                "createdAt": "2026-11-13T09:57:41.055Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "90.26",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1039",
+                "name": "#1039",
+                "createdAt": "2026-11-12T22:37:23.459Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "178.61",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Ravi Shah"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1038",
+                "name": "#1038",
+                "createdAt": "2026-11-12T13:12:39.264Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "289.44",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1037",
+                "name": "#1037",
+                "createdAt": "2026-11-12T05:24:02.184Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "130.98",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Hannah Kim"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1036",
+                "name": "#1036",
+                "createdAt": "2026-11-11T14:55:15.141Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "119.49",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1035",
+                "name": "#1035",
+                "createdAt": "2026-11-11T05:35:20.146Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "108.66",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1034",
+                "name": "#1034",
+                "createdAt": "2026-11-10T18:40:13.736Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "93.10",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1033",
+                "name": "#1033",
+                "createdAt": "2026-11-10T10:13:03.369Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "251.14",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1032",
+                "name": "#1032",
+                "createdAt": "2026-11-09T19:52:59.779Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "99.59",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1031",
+                "name": "#1031",
+                "createdAt": "2026-11-09T06:47:25.793Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "46.96",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Priya Patel"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1030",
+                "name": "#1030",
+                "createdAt": "2026-11-08T21:05:30.254Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "194.85",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1029",
+                "name": "#1029",
+                "createdAt": "2026-11-08T13:50:43.906Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "237.07",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1028",
+                "name": "#1028",
+                "createdAt": "2026-11-07T22:02:46.756Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "78.35",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1027",
+                "name": "#1027",
+                "createdAt": "2026-11-07T15:54:52.677Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "159.54",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Marcus Chen"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "MjA="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": "MjA=",
+          "query": null
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1026",
+                "name": "#1026",
+                "createdAt": "2026-11-07T04:23:04.780Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "217.58",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1025",
+                "name": "#1025",
+                "createdAt": "2026-11-06T13:17:36.923Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "146.55",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Sofia Rossi"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1024",
+                "name": "#1024",
+                "createdAt": "2026-11-06T02:54:02.267Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "51.29",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1023",
+                "name": "#1023",
+                "createdAt": "2026-11-05T17:05:19.620Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "127.07",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1022",
+                "name": "#1022",
+                "createdAt": "2026-11-05T09:22:01.930Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "440.99",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Hannah Kim"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1021",
+                "name": "#1021",
+                "createdAt": "2026-11-04T17:40:15.348Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "33.97",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1020",
+                "name": "#1020",
+                "createdAt": "2026-11-04T11:09:34.525Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "50.21",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Hannah Kim"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1019",
+                "name": "#1019",
+                "createdAt": "2026-11-03T21:12:44.124Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "127.07",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1018",
+                "name": "#1018",
+                "createdAt": "2026-11-03T12:19:28.017Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "42.63",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1017",
+                "name": "#1017",
+                "createdAt": "2026-11-02T22:15:18.484Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "27.48",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Marcus Chen"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1016",
+                "name": "#1016",
+                "createdAt": "2026-11-02T13:31:26.442Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "17.32",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1015",
+                "name": "#1015",
+                "createdAt": "2026-11-02T03:29:03.090Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "224.49",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1014",
+                "name": "#1014",
+                "createdAt": "2026-11-01T14:20:45.415Z",
+                "displayFinancialStatus": "REFUNDED",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "180.78",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1013",
+                "name": "#1013",
+                "createdAt": "2026-11-01T06:14:43.833Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "96.76",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1012",
+                "name": "#1012",
+                "createdAt": "2026-10-31T18:05:15.208Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "36.81",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1011",
+                "name": "#1011",
+                "createdAt": "2026-10-31T05:08:03.174Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "111.91",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1010",
+                "name": "#1010",
+                "createdAt": "2026-10-30T17:14:59.208Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "23.82",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1009",
+                "name": "#1009",
+                "createdAt": "2026-10-30T09:42:41.915Z",
+                "displayFinancialStatus": "REFUNDED",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "85.93",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1008",
+                "name": "#1008",
+                "createdAt": "2026-10-29T18:34:05.862Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "143.97",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Marcus Chen"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1007",
+                "name": "#1007",
+                "createdAt": "2026-10-29T10:43:43.492Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "80.11",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Tom Whitaker"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "NDA="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": "NDA=",
+          "query": null
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1006",
+                "name": "#1006",
+                "createdAt": "2026-10-28T21:15:37.755Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "172.53",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Priya Patel"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1005",
+                "name": "#1005",
+                "createdAt": "2026-10-28T13:40:34.354Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "34.64",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Marcus Chen"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1004",
+                "name": "#1004",
+                "createdAt": "2026-10-28T01:47:41.129Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "33.97",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1003",
+                "name": "#1003",
+                "createdAt": "2026-10-27T11:26:37.936Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "153.72",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Tom Whitaker"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1002",
+                "name": "#1002",
+                "createdAt": "2026-10-27T01:50:10.588Z",
+                "displayFinancialStatus": "REFUNDED",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "156.96",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Jane Cooper"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1001",
+                "name": "#1001",
+                "createdAt": "2026-10-26T14:53:36.158Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "399.86",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Tom Whitaker"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "NDY="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": "status:open fulfillment_status:unfulfilled"
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1046",
+                "name": "#1046",
+                "createdAt": "2026-11-16T20:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1045",
+                "name": "#1045",
+                "createdAt": "2026-11-16T18:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1044",
+                "name": "#1044",
+                "createdAt": "2026-11-16T17:15:00.000Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1043",
+                "name": "#1043",
+                "createdAt": "2026-11-16T15:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1042",
+                "name": "#1042",
+                "createdAt": "2026-11-16T14:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1041",
+                "name": "#1041",
+                "createdAt": "2026-11-14T00:15:15.684Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "417.18",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1020",
+                "name": "#1020",
+                "createdAt": "2026-11-04T11:09:34.525Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "50.21",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Hannah Kim"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1010",
+                "name": "#1010",
+                "createdAt": "2026-10-30T17:14:59.208Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "23.82",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1004",
+                "name": "#1004",
+                "createdAt": "2026-10-28T01:47:41.129Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "33.97",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "OQ=="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": "financial_status:pending"
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1044",
+                "name": "#1044",
+                "createdAt": "2026-11-16T17:15:00.000Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1036",
+                "name": "#1036",
+                "createdAt": "2026-11-11T14:55:15.141Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "119.49",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1035",
+                "name": "#1035",
+                "createdAt": "2026-11-11T05:35:20.146Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "108.66",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1026",
+                "name": "#1026",
+                "createdAt": "2026-11-07T04:23:04.780Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "217.58",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1019",
+                "name": "#1019",
+                "createdAt": "2026-11-03T21:12:44.124Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "127.07",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1007",
+                "name": "#1007",
+                "createdAt": "2026-10-29T10:43:43.492Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "80.11",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Tom Whitaker"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "Ng=="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": null
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1046",
+                "name": "#1046",
+                "createdAt": "2026-11-16T20:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1045",
+                "name": "#1045",
+                "createdAt": "2026-11-16T18:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1044",
+                "name": "#1044",
+                "createdAt": "2026-11-16T17:15:00.000Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1043",
+                "name": "#1043",
+                "createdAt": "2026-11-16T15:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1042",
+                "name": "#1042",
+                "createdAt": "2026-11-16T14:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1041",
+                "name": "#1041",
+                "createdAt": "2026-11-14T00:15:15.684Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "417.18",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1040",
+                "name": "#1040",
+                "createdAt": "2026-11-13T09:57:41.055Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "90.26",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1039",
+                "name": "#1039",
+                "createdAt": "2026-11-12T22:37:23.459Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "178.61",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Ravi Shah"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1038",
+                "name": "#1038",
+                "createdAt": "2026-11-12T13:12:39.264Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "289.44",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1037",
+                "name": "#1037",
+                "createdAt": "2026-11-12T05:24:02.184Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "130.98",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Hannah Kim"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1036",
+                "name": "#1036",
+                "createdAt": "2026-11-11T14:55:15.141Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "119.49",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1035",
+                "name": "#1035",
+                "createdAt": "2026-11-11T05:35:20.146Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "108.66",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1034",
+                "name": "#1034",
+                "createdAt": "2026-11-10T18:40:13.736Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "93.10",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1033",
+                "name": "#1033",
+                "createdAt": "2026-11-10T10:13:03.369Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "251.14",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1032",
+                "name": "#1032",
+                "createdAt": "2026-11-09T19:52:59.779Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "99.59",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Amara Okafor"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1031",
+                "name": "#1031",
+                "createdAt": "2026-11-09T06:47:25.793Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "46.96",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Priya Patel"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1030",
+                "name": "#1030",
+                "createdAt": "2026-11-08T21:05:30.254Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "194.85",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1029",
+                "name": "#1029",
+                "createdAt": "2026-11-08T13:50:43.906Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "237.07",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1028",
+                "name": "#1028",
+                "createdAt": "2026-11-07T22:02:46.756Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "78.35",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1027",
+                "name": "#1027",
+                "createdAt": "2026-11-07T15:54:52.677Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "159.54",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Marcus Chen"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": true,
+              "endCursor": "MjA="
+            }
+          }
+        }
+      },
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": "jane"
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1002",
+                "name": "#1002",
+                "createdAt": "2026-10-27T01:50:10.588Z",
+                "displayFinancialStatus": "REFUNDED",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "156.96",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Jane Cooper"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "MQ=="
+            }
+          }
+        }
+      }
+    ],
+    "OrderDetail": [
+      {
+        "variables": {
+          "id": "gid://shopify/Order/1046"
+        },
+        "data": {
+          "order": {
+            "id": "gid://shopify/Order/1046",
+            "name": "#1046",
+            "createdAt": "2026-11-16T20:15:00.000Z",
+            "email": "lucas.moreau@example.com",
+            "note": null,
+            "displayFinancialStatus": "PAID",
+            "displayFulfillmentStatus": "UNFULFILLED",
+            "customer": {
+              "displayName": "Lucas Moreau"
+            },
+            "shippingAddress": {
+              "name": "Lucas Moreau",
+              "address1": "500 Pine St",
+              "city": "Denver",
+              "provinceCode": "CO",
+              "zip": "80202",
+              "countryCodeV2": "US"
+            },
+            "lineItems": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/LineItem/50089",
+                  "title": "Recycled Glass Vase",
+                  "variantTitle": "Amber",
+                  "sku": "RECY-AMB",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "36.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                },
+                {
+                  "id": "gid://shopify/LineItem/50090",
+                  "title": "Marble Coaster Set",
+                  "variantTitle": null,
+                  "sku": "MARB-STD",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "39.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                }
+              ]
+            },
+            "subtotalPriceSet": {
+              "shopMoney": {
+                "amount": "75.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalShippingPriceSet": {
+              "shopMoney": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalTaxSet": {
+              "shopMoney": {
+                "amount": "6.19",
+                "currencyCode": "USD"
+              }
+            },
+            "totalPriceSet": {
+              "shopMoney": {
+                "amount": "81.19",
+                "currencyCode": "USD"
+              }
+            },
+            "fulfillmentOrders": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/FulfillmentOrder/7045",
+                  "status": "OPEN"
+                }
+              ]
+            },
+            "fulfillments": []
+          }
+        }
+      },
+      {
+        "variables": {
+          "id": "gid://shopify/Order/1002"
+        },
+        "data": {
+          "order": {
+            "id": "gid://shopify/Order/1002",
+            "name": "#1002",
+            "createdAt": "2026-10-27T01:50:10.588Z",
+            "email": "jane.cooper@example.com",
+            "note": null,
+            "displayFinancialStatus": "REFUNDED",
+            "displayFulfillmentStatus": "FULFILLED",
+            "customer": {
+              "displayName": "Jane Cooper"
+            },
+            "shippingAddress": {
+              "name": "Jane Cooper",
+              "address1": "214 Elm St",
+              "city": "Portland",
+              "provinceCode": "OR",
+              "zip": "97205",
+              "countryCodeV2": "US"
+            },
+            "lineItems": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/LineItem/50004",
+                  "title": "Enamel Watering Can",
+                  "variantTitle": null,
+                  "sku": "ENAM-STD",
+                  "quantity": 2,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "58.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                },
+                {
+                  "id": "gid://shopify/LineItem/50005",
+                  "title": "Linen Throw Pillow",
+                  "variantTitle": "Oat",
+                  "sku": "LINE-OAT",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "29.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                }
+              ]
+            },
+            "subtotalPriceSet": {
+              "shopMoney": {
+                "amount": "145.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalShippingPriceSet": {
+              "shopMoney": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalTaxSet": {
+              "shopMoney": {
+                "amount": "11.96",
+                "currencyCode": "USD"
+              }
+            },
+            "totalPriceSet": {
+              "shopMoney": {
+                "amount": "156.96",
+                "currencyCode": "USD"
+              }
+            },
+            "fulfillmentOrders": {
+              "nodes": []
+            },
+            "fulfillments": [
+              {
+                "trackingInfo": [
+                  {
+                    "company": "UPS",
+                    "number": "1Z999AA110007014"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ]
+  }
+}

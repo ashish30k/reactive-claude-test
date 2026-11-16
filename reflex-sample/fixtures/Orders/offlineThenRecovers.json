@@ -1,0 +1,35 @@
+{
+  "description": "First orders request fails (no connection); the retry succeeds with two orders.",
+  "operations": {
+    "OrdersList": [
+      { "networkError": "The Internet connection appears to be offline." },
+      {
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/2002",
+                "name": "#2002",
+                "createdAt": "2026-11-16T19:05:00Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": { "shopMoney": { "amount": "64.95", "currencyCode": "USD" } },
+                "customer": { "displayName": "Ada Lovelace" }
+              },
+              {
+                "id": "gid://shopify/Order/2001",
+                "name": "#2001",
+                "createdAt": "2026-11-15T14:00:00Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "FULFILLED",
+                "totalPriceSet": { "shopMoney": { "amount": "1250.00", "currencyCode": "USD" } },
+                "customer": null
+              }
+            ],
+            "pageInfo": { "hasNextPage": false, "endCursor": "Mg==" }
+          }
+        }
+      }
+    ]
+  }
+}

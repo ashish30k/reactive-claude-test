@@ -1,0 +1,552 @@
+{
+  "description": "Fulfill the newest unfulfilled order with UPS tracking; dashboard and lists refresh.",
+  "operations": {
+    "ShopOverview": [
+      {
+        "variables": {
+          "todayQuery": "created_at:>='2026-11-16T05:00:00.000Z'"
+        },
+        "data": {
+          "shop": {
+            "name": "Maple & Pine Goods",
+            "currencyCode": "USD"
+          },
+          "todayOrders": {
+            "nodes": [
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                }
+              }
+            ]
+          },
+          "unfulfilled": {
+            "count": 9
+          },
+          "lowStock": {
+            "count": 4
+          }
+        }
+      },
+      {
+        "variables": {
+          "todayQuery": "created_at:>='2026-11-16T05:00:00.000Z'"
+        },
+        "data": {
+          "shop": {
+            "name": "Maple & Pine Goods",
+            "currencyCode": "USD"
+          },
+          "todayOrders": {
+            "nodes": [
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                }
+              }
+            ]
+          },
+          "unfulfilled": {
+            "count": 8
+          },
+          "lowStock": {
+            "count": 4
+          }
+        }
+      },
+      {
+        "variables": {
+          "todayQuery": "created_at:>='2026-11-16T05:00:00.000Z'"
+        },
+        "data": {
+          "shop": {
+            "name": "Maple & Pine Goods",
+            "currencyCode": "USD"
+          },
+          "todayOrders": {
+            "nodes": [
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                }
+              },
+              {
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                }
+              }
+            ]
+          },
+          "unfulfilled": {
+            "count": 8
+          },
+          "lowStock": {
+            "count": 4
+          }
+        }
+      }
+    ],
+    "OrdersList": [
+      {
+        "variables": {
+          "first": 20,
+          "after": null,
+          "query": "status:open fulfillment_status:unfulfilled"
+        },
+        "data": {
+          "orders": {
+            "nodes": [
+              {
+                "id": "gid://shopify/Order/1046",
+                "name": "#1046",
+                "createdAt": "2026-11-16T20:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "81.19",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1045",
+                "name": "#1045",
+                "createdAt": "2026-11-16T18:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "145.06",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Noah Johnson"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1044",
+                "name": "#1044",
+                "createdAt": "2026-11-16T17:15:00.000Z",
+                "displayFinancialStatus": "PENDING",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "139.64",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1043",
+                "name": "#1043",
+                "createdAt": "2026-11-16T15:45:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "168.20",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Emily Davis"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1042",
+                "name": "#1042",
+                "createdAt": "2026-11-16T14:15:00.000Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "115.16",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1041",
+                "name": "#1041",
+                "createdAt": "2026-11-14T00:15:15.684Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "417.18",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Lucas Moreau"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1020",
+                "name": "#1020",
+                "createdAt": "2026-11-04T11:09:34.525Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "50.21",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Hannah Kim"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1010",
+                "name": "#1010",
+                "createdAt": "2026-10-30T17:14:59.208Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "23.82",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              },
+              {
+                "id": "gid://shopify/Order/1004",
+                "name": "#1004",
+                "createdAt": "2026-10-28T01:47:41.129Z",
+                "displayFinancialStatus": "PAID",
+                "displayFulfillmentStatus": "UNFULFILLED",
+                "totalPriceSet": {
+                  "shopMoney": {
+                    "amount": "33.97",
+                    "currencyCode": "USD"
+                  }
+                },
+                "customer": {
+                  "displayName": "Diego Alvarez"
+                }
+              }
+            ],
+            "pageInfo": {
+              "hasNextPage": false,
+              "endCursor": "OQ=="
+            }
+          }
+        }
+      }
+    ],
+    "OrderDetail": [
+      {
+        "variables": {
+          "id": "gid://shopify/Order/1046"
+        },
+        "data": {
+          "order": {
+            "id": "gid://shopify/Order/1046",
+            "name": "#1046",
+            "createdAt": "2026-11-16T20:15:00.000Z",
+            "email": "lucas.moreau@example.com",
+            "note": null,
+            "displayFinancialStatus": "PAID",
+            "displayFulfillmentStatus": "UNFULFILLED",
+            "customer": {
+              "displayName": "Lucas Moreau"
+            },
+            "shippingAddress": {
+              "name": "Lucas Moreau",
+              "address1": "500 Pine St",
+              "city": "Denver",
+              "provinceCode": "CO",
+              "zip": "80202",
+              "countryCodeV2": "US"
+            },
+            "lineItems": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/LineItem/50089",
+                  "title": "Recycled Glass Vase",
+                  "variantTitle": "Amber",
+                  "sku": "RECY-AMB",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "36.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                },
+                {
+                  "id": "gid://shopify/LineItem/50090",
+                  "title": "Marble Coaster Set",
+                  "variantTitle": null,
+                  "sku": "MARB-STD",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "39.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                }
+              ]
+            },
+            "subtotalPriceSet": {
+              "shopMoney": {
+                "amount": "75.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalShippingPriceSet": {
+              "shopMoney": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalTaxSet": {
+              "shopMoney": {
+                "amount": "6.19",
+                "currencyCode": "USD"
+              }
+            },
+            "totalPriceSet": {
+              "shopMoney": {
+                "amount": "81.19",
+                "currencyCode": "USD"
+              }
+            },
+            "fulfillmentOrders": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/FulfillmentOrder/7045",
+                  "status": "OPEN"
+                }
+              ]
+            },
+            "fulfillments": []
+          }
+        }
+      },
+      {
+        "variables": {
+          "id": "gid://shopify/Order/1046"
+        },
+        "data": {
+          "order": {
+            "id": "gid://shopify/Order/1046",
+            "name": "#1046",
+            "createdAt": "2026-11-16T20:15:00.000Z",
+            "email": "lucas.moreau@example.com",
+            "note": null,
+            "displayFinancialStatus": "PAID",
+            "displayFulfillmentStatus": "FULFILLED",
+            "customer": {
+              "displayName": "Lucas Moreau"
+            },
+            "shippingAddress": {
+              "name": "Lucas Moreau",
+              "address1": "500 Pine St",
+              "city": "Denver",
+              "provinceCode": "CO",
+              "zip": "80202",
+              "countryCodeV2": "US"
+            },
+            "lineItems": {
+              "nodes": [
+                {
+                  "id": "gid://shopify/LineItem/50089",
+                  "title": "Recycled Glass Vase",
+                  "variantTitle": "Amber",
+                  "sku": "RECY-AMB",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "36.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                },
+                {
+                  "id": "gid://shopify/LineItem/50090",
+                  "title": "Marble Coaster Set",
+                  "variantTitle": null,
+                  "sku": "MARB-STD",
+                  "quantity": 1,
+                  "originalUnitPriceSet": {
+                    "shopMoney": {
+                      "amount": "39.00",
+                      "currencyCode": "USD"
+                    }
+                  }
+                }
+              ]
+            },
+            "subtotalPriceSet": {
+              "shopMoney": {
+                "amount": "75.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalShippingPriceSet": {
+              "shopMoney": {
+                "amount": "0.00",
+                "currencyCode": "USD"
+              }
+            },
+            "totalTaxSet": {
+              "shopMoney": {
+                "amount": "6.19",
+                "currencyCode": "USD"
+              }
+            },
+            "totalPriceSet": {
+              "shopMoney": {
+                "amount": "81.19",
+                "currencyCode": "USD"
+              }
+            },
+            "fulfillmentOrders": {
+              "nodes": []
+            },
+            "fulfillments": [
+              {
+                "trackingInfo": [
+                  {
+                    "company": "UPS",
+                    "number": "1Z999AA10123456784"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "FulfillOrder": [
+      {
+        "data": {
+          "fulfillmentCreate": {
+            "fulfillment": {
+              "id": "gid://shopify/Fulfillment/1794810827813",
+              "status": "SUCCESS"
+            },
+            "userErrors": []
+          }
+        }
+      }
+    ]
+  }
+}
